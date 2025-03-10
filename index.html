@@ -3,33 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Site</title>
 </head>
 <body>
-    <div id="calculator">
-        < input id="Display">
-        <div id ="keys">
-            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>3</button>
-            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="calculate()">=</button>
-            <button onclick="ClearDisplay()" class="operator-btn">C</button>
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                    <h1>Personal Infor</h1>
+                </div>
+                <div class="panel-body">
+                    <form action="index.php" method="post">
+                        <div class="form-group">
+                            <label for="name">First Name</label>
+                            <input type="text" class="form-control" id="first_name" title="Enter your first name" placeholder="First Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="LastName">Last Name</label>
+                            <input type="text" class="form-control" id="last_name" title="Enter your last name" placeholder="Last Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Gender</label>
+                            <div>
+                                <label for="male" class="radio-inline"><input type="radio" name="gender" id="male">Male</label>
+                                <label for="female" class="radio-inline"><input type="radio" name="gender" id="female">Female</label>
+                                
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" title="Enter your email" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" title="Enter your password" placeholder="Password" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm_password" title="Enter your password again" placeholder="Confirm Password" />
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Submit" />
+                    </form>
 
-        </div>
-    </div>
 
-    <script src ="index.js"></script>/script>
+                            
+
+    
 </body>
 </html>
